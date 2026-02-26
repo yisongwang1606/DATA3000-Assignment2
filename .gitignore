@@ -1,0 +1,9 @@
+# IDE
+.vscode/
+
+# Build output
+bin/
+
+# Generated CSV outputs
+sortedemployeeByName.csv
+sortedemployeeBySalary.csv
