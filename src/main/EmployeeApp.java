@@ -60,6 +60,33 @@ public class EmployeeApp {
         System.out.println("###########################################");
         System.out.println();
 
+        //wait 10s
+        try {
+            Thread.sleep(10_000);
+        } catch (InterruptedException e) {
+            Thread.currentThread().interrupt();
+            return;
+        }
+        
+        System.out.println("Employees sorted by salary:");
+        for (int i = 0; i < bySalary.length; i++) {
+            System.out.println(bySalary[i]);
+        }
+
+        //wait 10s
+        try {
+            Thread.sleep(10_000);
+        } catch (InterruptedException e) {
+            Thread.currentThread().interrupt();
+            return;
+        }
+
+        System.out.println();
+        System.out.println("Employees sorted by name:");
+        for (int i = 0; i < byName.length; i++) {
+            System.out.println(byName[i]);
+        }
+
         try {
             FileHandler.writeEmployees(
                     "sortedemployeeBySalary.csv",

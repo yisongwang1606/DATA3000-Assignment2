@@ -23,4 +23,12 @@ public class EmployeeByName implements Comparable<EmployeeByName> {
     public int compareTo(EmployeeByName other) {
         return this.name.compareToIgnoreCase(other.name);
     }
+
+    @Override
+    public String toString() {
+        if (employee != null) {
+            return employee.toString();
+        }
+        return name;
+    }
 }
