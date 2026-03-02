@@ -27,7 +27,7 @@ public class Employee implements Comparable<Employee> {
         return name;
     }
 
-    //netSalary = gross * (1 - provRate - fedRate) + educationAllowance
+    //netSalary = gross * (1 - provRate - fedRate) + educationAllowance 
     public double calcHourlySalary() {
 
         double gross = hoursWorked * hourlyRate;
